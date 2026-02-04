@@ -9,6 +9,7 @@ const createModalMethod = (method: keyof typeof ArcoModal) => {
   return (config: ModalConfig, appContext?: AppContext) => {
     return ArcoModal[method](
       {
+        maskClosable: false,
         ...config,
         onBeforeOk: async (done: (v: boolean) => void) => {
           try {

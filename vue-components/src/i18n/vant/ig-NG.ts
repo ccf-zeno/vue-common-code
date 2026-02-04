@@ -1,0 +1,70 @@
+export default {
+  name: 'Aha',
+  tel: 'Ekwentị',
+  save: 'Chekwa',
+  clear: 'Hichapụ',
+  cancel: 'Kagbuo',
+  confirm: 'Kwenye',
+  delete: 'Hichapụ',
+  loading: 'Na-ebubata...',
+  noCoupon: 'Enweghị kupọn',
+  nameEmpty: 'Biko tinye aha',
+  addContact: 'Tinye onye kọntaktị',
+  telInvalid: 'Biko tinye ekwentị ziri ezi',
+  vanCalendar: {
+    end: 'Njedebe',
+    start: 'Malite',
+    title: 'Họrọ Ụbọchị',
+    weekdays: [
+      'Ụka',
+      'Mọnde',
+      'Tuzdee',
+      'Wenezdee',
+      'Tọọzdee',
+      'Fraịdee',
+      'Satọdee',
+    ],
+    monthTitle: (year: number, month: number) => `${year} Afọ ${month} Ọnwa`,
+    rangePrompt: (maxRange: number) => `Họrọ ụbọchị ruru ${maxRange} kachasị`,
+  },
+  vanCascader: {
+    select: 'Họrọ',
+  },
+  vanPagination: {
+    prev: 'Peeji gara aga',
+    next: 'Peeji na-esote',
+  },
+  vanPullRefresh: {
+    pulling: 'Dọta ala iji mee ka ọ dị ọhụrụ...',
+    loosing: 'Hapụ iji mee ka ọ dị ọhụrụ...',
+  },
+  vanSubmitBar: {
+    label: 'Ngụkọta:',
+  },
+  vanCoupon: {
+    unlimited: 'Enweghị ókè',
+    discount: (discount: number) => `${discount}% mbelata`,
+    condition: (condition: number) => `Tinye na ngafe ego ${condition}`,
+  },
+  vanCouponCell: {
+    title: 'Kupọn',
+    count: (count: number) => `Kupọn ${count} dị`,
+  },
+  vanCouponList: {
+    exchange: 'Tụgharị',
+    close: 'Ejighị',
+    enable: 'Nwere ike iji',
+    disabled: 'Enweghị ike iji',
+    placeholder: 'Tinye koodu kupọn',
+  },
+  vanAddressEdit: {
+    area: 'Ebe',
+    areaEmpty: 'Biko họrọ ebe',
+    addressEmpty: 'Biko tinye nkọwa zuru ezu',
+    addressDetail: 'Nkọwa zuru ezu',
+    defaultAddress: 'Tọlitee dị ka adreesị ndabara',
+  },
+  vanAddressList: {
+    add: 'Tinye adreesị ọhụrụ',
+  },
+};

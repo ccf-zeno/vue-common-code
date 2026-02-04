@@ -1,13 +1,14 @@
+<!-- eslint-disable vue/no-dupe-keys -->
 <script lang="ts">
-import type { PropType } from "vue";
-import { computed, defineComponent } from "vue";
-import { Modal } from "@arco-design/web-vue";
-import { omit } from "lodash-es";
+import type { PropType } from 'vue';
+import { computed, defineComponent } from 'vue';
+import { Modal } from '@arco-design/web-vue';
+import { omit } from 'lodash-es';
 
-import { handleEmits } from "@/utils";
+import { handleEmits } from '../../utils';
 
 export default defineComponent({
-  name: "MiModal",
+  name: 'MiModal',
   components: {
     ArcoModal: Modal,
   },
@@ -23,10 +24,14 @@ export default defineComponent({
       type: [Number, String],
       default: 500,
     },
+    maskClosable: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup: (props, { emit, slots }) => {
     const aProps = computed(() => {
-      return omit(props, ["onBeforeOk", "width"]) as any;
+      return omit(props, ['onBeforeOk', 'width']) as any;
     });
     const aSlots = slots as any;
     const aEmits = handleEmits(Modal.emits, emit);

@@ -1,0 +1,70 @@
+export default {
+  name: 'Orukọ',
+  tel: 'Tẹlifoonu',
+  save: 'Fipamọ',
+  clear: 'Ko o',
+  cancel: 'Fagilee',
+  confirm: 'Ẹri',
+  delete: 'Paarẹ',
+  loading: 'Nwọle...',
+  noCoupon: 'Kò sí kùpọ́n',
+  nameEmpty: 'Jọwọ tẹ orukọ sii',
+  addContact: 'Ṣe afikun olubasọrọ',
+  telInvalid: 'Jọwọ tẹ tẹlifoonu tó tọ́ sii',
+  vanCalendar: {
+    end: 'Opin',
+    start: 'Bẹrẹ',
+    title: 'Yan Ọjọ́',
+    weekdays: [
+      'Ṣẹ́ɛ́sẹ̀',
+      'Mọ́ńdẹ̀',
+      'Túúsìdì',
+      'Ẹríkẹ̀rì',
+      'Tọ́sìdì',
+      'Fraídè',
+      'Sátidé',
+    ],
+    monthTitle: (year: number, month: number) => `${year} Ọdún ${month} Osù`,
+    rangePrompt: (maxRange: number) => `Yan àwọn ọjọ́ tó pọ̀jù ${maxRange}`,
+  },
+  vanCascader: {
+    select: 'Jọwọ yan',
+  },
+  vanPagination: {
+    prev: 'Ojúewé tó kọjá',
+    next: 'Ojúewé tó ń bọ̀',
+  },
+  vanPullRefresh: {
+    pulling: 'Fa sálọ́wọ́ láti ṣe àtúnṣe...',
+    loosing: 'Tu silẹ láti ṣe àtúnṣe...',
+  },
+  vanSubmitBar: {
+    label: 'Lapapọ:',
+  },
+  vanCoupon: {
+    unlimited: 'Kò ní ìdíyelé',
+    discount: (discount: number) => `Ẹdinwo ${discount}%`,
+    condition: (condition: number) => `Lọ́wọ́ ní ohun tí ó ju ${condition}`,
+  },
+  vanCouponCell: {
+    title: 'Kùpọ́n',
+    count: (count: number) => `${count} Tí ó wà`,
+  },
+  vanCouponList: {
+    exchange: 'Àtúnṣe',
+    close: 'Má ṣe lò',
+    enable: 'Wà fún lílò',
+    disabled: 'Kò sì ní lílò',
+    placeholder: 'Tẹ koodu kùpọ́n sii',
+  },
+  vanAddressEdit: {
+    area: 'Agbegbe',
+    areaEmpty: 'Jọwọ yan agbegbe',
+    addressEmpty: 'Jọwọ tẹ àdírẹ́sì pípé sii',
+    addressDetail: 'Àdírẹ́sì pípé',
+    defaultAddress: 'Ṣètò gẹ́gẹ́ bí àdírẹ́sì ààrin',
+  },
+  vanAddressList: {
+    add: 'Ṣe afikun àdírẹ́sì tuntun',
+  },
+};
